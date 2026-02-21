@@ -1,0 +1,79 @@
+:root{
+  --blue-dark: #071B3A;
+  --blue-medium: #0B2A58;
+  --blue-light: #BFD6F0;
+  --white: #F5F7FB;
+}
+
+/* reset */
+*{ margin:0; padding:0; box-sizing:border-box; }
+html, body{ height:100%; }
+
+body{
+  font-family: "Open Sans", sans-serif; 
+  color: #071B3A;
+  overflow-x: hidden;
+}
+
+/* ===== BLOCO BASE ===== */
+.block{
+  min-height: 100svh;          /* melhor no mobile (considera barra do navegador) */
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 24px;
+}
+
+/* ===== BLOCO 1: CAPA FULLSCREEN ===== */
+.block--cover{
+  background:
+    radial-gradient(900px 700px at 85% 20%, rgba(191,214,240,.20), transparent 60%),
+    radial-gradient(1200px 800px at 20% 0%, rgba(29,78,147,.55), transparent 55%),
+    linear-gradient(180deg, var(--blue-dark), var(--blue-medium));
+    padding: 0;
+    min-height: 100svh;
+}
+
+.cover-logo{
+  width: 100vw;
+  height: 100svh;
+  object-fit: contain; /* ou cover se quiser cortar */
+  display: block;
+}
+
+@keyframes bounce{
+  0%, 100% { transform: translateY(0); opacity: .55; }
+  50%      { transform: translateY(26px); opacity: 1; }
+}
+
+/* ===== BLOCO 2: CONTEÚDO ===== */
+.block--content{
+  background: linear-gradient(180deg, var(--blue-medium), var(--blue-dark));
+  align-items: start;
+  padding-top: 72px;
+  background: var(--blue-light);
+}
+
+.content-header{
+  width: min(920px, 100%);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.brand{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(44px, 10vw, 88px);
+  color: #071B3A;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.subtitle{
+  margin: 16px auto 0;
+  max-width: 60ch;
+  font-size: clamp(14px, 3.8vw, 18px);
+  opacity: .9;
+  line-height: 1.5;
+}
