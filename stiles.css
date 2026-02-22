@@ -28,14 +28,23 @@ body{
 
 /* ===== BLOCO 1: CAPA FULLSCREEN ===== */
 .block--cover{
-  padding: 0;
+  min-height: 100vh;
   min-height: 100svh;
+
+  background:
+    url("imagens/Captura de tela 2026-02-21 100445.png") center center no-repeat,
+    linear-gradient(180deg, var(--blue-dark), var(--blue-medium));
+
+  background-size: cover; 
+  background-color: var(--blue-dark);
 }
 
 .cover-logo{
   width: 100vw;
-  height: 100svh;
-  object-fit: contain;
+  height: 100vh;   
+  height: 100svh;  
+  object-fit: cover;
+  object-position: center; 
   display: block;
 }
 
