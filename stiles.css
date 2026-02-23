@@ -422,13 +422,13 @@ html{
 
 .tab-text7{
   text-align: center;
-  color: var(--blue-light);
+  color: var(--blue-dark);
   margin-top: 30px;
 }
 
 .tab-text71{
   margin-top: 70px;
-  color: var(--blue-light);
+  color: var(--blue-dark);
   max-width: 400px;
   text-align: center;
 }
