@@ -382,7 +382,7 @@ html{
 /* ===== BLOCO 7: FUNDO AZUL ESCURO + QUADRADO AZUL MÉDIO NO CENTRO ===== */
 
 .block--content7{
-  background: var(--blue-dark);
+  background: var(--blue-medio);
   padding: 140px 0;
   display: flex;
   flex-direction: column;
