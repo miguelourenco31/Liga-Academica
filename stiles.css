@@ -28,24 +28,21 @@ body{
 
 /* ===== BLOCO 1: CAPA FULLSCREEN ===== */
 .block--cover{
-  min-height: 100vh;
   min-height: 100svh;
 
-  background:
-    url("imagens/Captura de tela 2026-02-21 100445.png") center center no-repeat,
-    linear-gradient(180deg, var(--blue-dark), var(--blue-medium));
+  background-image: url("imagens/Captura de tela 2026-02-21 100445.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; 
 
-  background-size: cover; 
-  background-color: var(--blue-dark);
+  background-color: var(--blue-dark); 
 }
 
 .cover-logo{
-  width: 100vw;
-  height: 100vh;   
-  height: 100svh;  
-  object-fit: cover;
-  object-position: center; 
-  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100svh;
+  object-fit: contain;
 }
 
 /* ===== BLOCO 2: CONTEÚDO (AZUL CLARO) ===== */
@@ -141,6 +138,51 @@ body{
   margin: 0 auto;
 
   background: var(--blue-light);
+  border-radius: 18px;
+
+  padding: 80px 60px;
+}
+
+/* ===== BLOCO 4: FUNDO AZUL ESCURO + QUADRADO AZUL CLARO NO CENTRO ===== */
+
+.tipo4{
+  font-size: clamp(32px, 5vw, 60px);
+  text-align: center;                                
+  color: var(--blue-light); 
+}
+
+.tab-title4{
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--blue-light);
+}
+
+.tab-sub4{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--blue-light);
+}
+
+.tab-text4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--blue-light);
+}
+
+.block--grid-section4{
+  width: 100%;
+  background: linear-gradient(180deg, var(--blue-light), var(--blue-light));
+  padding: 140px 0;
+}
+
+.grid-box4{
+  width: min(1100px, 90%);
+  margin: 0 auto;
+
+  background: var(--blue-dark);
   border-radius: 18px;
 
   padding: 80px 60px;
