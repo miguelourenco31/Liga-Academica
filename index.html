@@ -4,192 +4,220 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LAEP</title>
+
   <link rel="stylesheet" href="stiles.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header class="main-header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li><a href="#apresentação" class="nav-link">APRESENTAÇÃO</a></li>
-      <li><a href="#ligantes" class="nav-link">LIGANTES</a></li>
-      <li><a href="#aulas" class="nav-link">AULAS</a></li>
-      <li><a href="#calendario" class="nav-link">CALENDARIO</a></li>
-      <li><a href="#vagas" class="nav-link">VAGAS</a></li>
-      <li><a href="#processos" class="nav-link">PROCESSOS</a></li>
-    </ul>
-  </nav>
-</header>
- 
-  <section class="block block--cover" aria-label="Capa">
-  </section>
 
-  <section id="apresentação" class="block block--content">
+<header class="main-header">
+  <div class="container header-inner">
+    <a class="brand-mini" href="#apresentação">LAEP</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav class="nav" id="site-nav">
+      <ul class="nav-list">
+        <li><a href="#apresentação" class="nav-link">APRESENTAÇÃO</a></li>
+        <li><a href="#ligantes" class="nav-link">LIGANTES</a></li>
+        <li><a href="#aulas" class="nav-link">AULAS</a></li>
+        <li><a href="#calendario" class="nav-link">CALENDÁRIO</a></li>
+        <li><a href="#vagas" class="nav-link">VAGAS</a></li>
+        <li><a href="#processos" class="nav-link">PROCESSOS</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- BLOCO 1 -->
+<section class="block block--cover" aria-label="Capa"></section>
+
+<!-- BLOCO 2 -->
+<section id="apresentação" class="block block--content">
+  <div class="container">
 
     <header class="content-header">
       <h1 class="brand">Apresentação</h1>
-<div class="tabs-grid">
-  <a class="tab" href="#aba1">
-    <h3 class="tab-title">O QUE É UMA LIGA ACADÊMICA?</h3>
-    <p class="tab-text">
-      Organização estudantil voltada ao aprofundamento teórico e à formação acadêmica em uma área específica.</p>
-  </a>
-
-  <a class="tab" href="#aba2">
-    <h3 class="tab-title">O QUE É EPISTEMOLOGIA ? </h3>
-    <P class="tab-text">A epistemologia é o ramo da filosofia que estuda o conhecimento, investigando como ele é formado e o que o torna válido, distinguindo saber de simples opinião</P>
-  </a>
-  <a class="tab" href="#aba3">
-    <h3 class="tab-title">QUEM SOMOS ?</h3>
-    <p class="tab-text">A LAEP surgiu a partir do encontro de diferentes interesses de um grupo de estudantes de Psicologia, movida pelo desejo de produzir conhecimento, desenvolver pesquisas e organizar grupos de estudo. Foi criada não apenas com um propósito acadêmico, mas também com a intenção de ampliar nossa experiência para além das salas de aula.</p>
-  </a>
-</div>
     </header>
-  </section>
 
-  <section id="ligantes" class="block block--grid-section">
-  <div class="grid-box">
-  <h1 class="tipo3">TIPOS DE LIGANTES</h1>
-  <h2 class="tab-title3">INTERINO</h2>
-  <p class="tab-text3"> Participa de uma parcela das atividades didáticas e práticas</p>
-  <p class="tab-text3">(50% DE PARTICIPAÇÃO)</p>
-  <p class="tab-text3">(NÃO PARTICIPA DA DIRETORIA)</p>
-  <h2 class="tab-title3">EFETIVO</h2>
-  <P class="tab-text3">Participa de todas as atividades didáticas e práticas</P>
-  <p class="tab-text3">(Pode fazer parte da diretoria)</p>
-  <p class="tab-text3">(70% DE PATICIPAÇÃO)</p>
+    <div class="tabs-grid">
+      <a class="tab" href="#">
+        <h3 class="tab-title">O QUE É UMA LIGA ACADÊMICA?</h3>
+        <p class="tab-text">
+          Organização estudantil voltada ao aprofundamento teórico e à formação acadêmica em uma área específica.
+        </p>
+      </a>
+
+      <a class="tab" href="#">
+        <h3 class="tab-title">O QUE É EPISTEMOLOGIA?</h3>
+        <p class="tab-text">
+          A epistemologia é o ramo da filosofia que estuda o conhecimento, investigando como ele é formado e o que o torna válido.
+        </p>
+      </a>
+
+      <a class="tab" href="#">
+        <h3 class="tab-title">QUEM SOMOS?</h3>
+        <p class="tab-text">
+          A LAEP surgiu a partir do encontro de estudantes de Psicologia com o desejo de produzir conhecimento, desenvolver pesquisas e ampliar a experiência acadêmica.
+        </p>
+      </a>
+    </div>
+
   </div>
 </section>
 
-  <section id="aulas" class="block block--grid-section4">
+<!-- BLOCO 3 -->
+<section id="ligantes" class="block block--grid-section">
+  <div class="container">
+    <div class="grid-box">
+
+      <h1 class="tipo3">TIPOS DE LIGANTES</h1>
+
+      <h2 class="tab-title3">INTERINO</h2>
+      <p class="tab-text3">Participa de uma parcela das atividades didáticas e práticas</p>
+      <p class="tab-text3">(50% de participação)</p>
+      <p class="tab-text3">(Não participa da diretoria)</p>
+
+      <h2 class="tab-title3">EFETIVO</h2>
+      <p class="tab-text3">Participa de todas as atividades didáticas e práticas</p>
+      <p class="tab-text3">(Pode fazer parte da diretoria)</p>
+      <p class="tab-text3">(70% de participação)</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 4 -->
+<section id="aulas" class="block block--grid-section4">
+  <div class="container">
     <div class="grid-box4">
-      <h1 class="tipo4">NOSSA AULAS</h1>
+
+      <h1 class="tipo4">NOSSAS AULAS</h1>
+
       <h2 class="tab-title4">SEGUNDA-FEIRA</h2>
       <p class="tab-sub4">GRUPO DE ESTUDO</p>
       <p class="tab-text4">Ministrado por Lisiane Fachinetto e Marcelo Solidade</p>
       <p class="tab-text4">Exclusivo para ligantes</p>
-      <p class="tab-text4">Realizado em formato híbrido</p>
-      <h1 class="tab-title4">SÁBADOS</h1>
-      <p class="tab-sub4">AULAS ABERTAS</p>
-      <p class="tab-text4">Ministradas por professores convidados</p>
-      <p class="tab-text4">Abertas ao público em geral</p>
-      <p class="tab-text4">(inclusive para participantes externos à FASM)</p>
-      <p class="tab-text4">Realizadas em formato online</p>
-    </div>
-  </section>
+      <p class="tab-text4">Formato híbrido</p>
 
-  <section id="calendario" class="block block--content5">
-      <div class="content5-container">
+      <h2 class="tab-title4">SÁBADOS</h2>
+      <p class="tab-sub4">AULAS ABERTAS</p>
+      <p class="tab-text4">Professores convidados</p>
+      <p class="tab-text4">Abertas ao público</p>
+      <p class="tab-text4">Formato online</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 5 -->
+<section id="calendario" class="block block--content5">
+  <div class="container content5-container">
+
     <div class="content5-header">
       <h1 class="tipo5">CALENDÁRIO MENSAL</h1>
-      <h2 class="tab-title5">MARÇO</h3>
-      <P class="tab-text5">Confira a programação completa</P>
-      <p class="tab-text5">Para mais informações sobre o evento, acesse nosso instagram</p>
-    </div>    
+      <h2 class="tab-title5">MARÇO</h2>
+      <p class="tab-text5">Confira a programação completa</p>
+      <p class="tab-text5">Para mais informações, acesse nosso Instagram</p>
+    </div>
 
     <div class="content5-box">
-      <h1>16/03</h1>
+      <h3>16/03</h3>
       <p class="tab-text5">ENCONTRO DE LIGANTES</p>
     </div>
+
     <div class="content5-box">
-      <h1>21/03</h1>
+      <h3>21/03</h3>
       <p class="tab-text5">AULA ABERTA</p>
     </div>
+
     <div class="content5-box">
-      <h1>30/03</h1>
+      <h3>30/03</h3>
       <p class="tab-text5">GRUPO DE ESTUDOS</p>
     </div>
 
-    <div>
-      <p class="rodape">*AS DATAS PODEM SOFRER ALTERAÇÕES</p>
-    </div>
+    <p class="rodape">*As datas podem sofrer alterações</p>
 
   </div>
-  </section>
+</section>
 
-  <section id="vagas" class="block block--content6">
+<!-- BLOCO 6 -->
+<section id="vagas" class="block block--content6">
+  <div class="container">
+
     <div class="content-header6">
-    <h1 class="tab-title6">VAGAS ABERTAS</h1>
+      <h1 class="tab-title6">VAGAS ABERTAS</h1>
     </div>
+
     <div class="grid-box6">
-      <div class="tab-title6">
-        <h1 class="subt6">CARGOS</h1>
-      </div>
-      <div class="tab-title6">
-        <h2 class="subt6">DIRETORIA</h2>
-      </div>
-      <div class="grid-box61">
-        <h3 class="tab-text6">DIRETOR DE MARKETING</h3>
-      </div>
-      <div class="grid-box61">
-        <h3 class="tab-text6">DIRETOR DE EVENTOS</h3>
-      </div>
-      <div class="grid-box61">
-        <h3 class="tab-text6">VICE-DIRETOR DE PESQUISA</h3>
-      </div>
-      <div class="grid-box61">
-        <h3 class="tab-text6">SECRETÁRIO</h3>
-      </div>
-      <div class="tab-title6">
-        <h2 class="subt6">LIGANTES</h2>
-      </div>
-      <div class="grid-box61">
-        <h3 class="tab-text6">LIGANTES EFETIVOS</h3>
-      </div>
-      <div class="grid-box61">
-        <h3 class="tab-text6">LIGANTES INTERINOS</h3>
-      </div>
-      <div class="tab-title6">
-        <h2 class="subt6">Para mais informações entre em contato</h2>
-        <h3 class="contato">(11)97641-2529</h3>
-      </div>
+      <div class="grid-box61"><h3 class="tab-text6">Diretor de Marketing</h3></div>
+      <div class="grid-box61"><h3 class="tab-text6">Diretor de Eventos</h3></div>
+      <div class="grid-box61"><h3 class="tab-text6">Vice-diretor de Pesquisa</h3></div>
+      <div class="grid-box61"><h3 class="tab-text6">Secretário</h3></div>
+      <div class="grid-box61"><h3 class="tab-text6">Ligantes Efetivos</h3></div>
+      <div class="grid-box61"><h3 class="tab-text6">Ligantes Interinos</h3></div>
     </div>
-  </section>
 
-  <section id="processos" class="block--content7">
- <div class="content-header6">
-    <h1 class="tab-title5">PROCESSO SELETIVO</h1>
-    <h2 class="tab-title5">23/02 ATÉ 09/03</h2>
   </div>
+</section>
 
-  <div class="grid-box7">
-    <div class="vaga-item">
-    <div class="grid-item7">
-      <h1 class="tab-title5">LIGANTE</h1>
-      <p class="text7">Período de inscrição:</p>
-      <p class="text7">23/02 até 27/02</p>
-    </div>
-    <p class="tab-text7">O processo seletivo para ligantes conta com a inscrição do formulário + um pequeno e simples bate-papo</p>
+<!-- BLOCO 7 -->
+<section id="processos" class="block block--content7">
+  <div class="container">
+
+    <div class="content-header6">
+      <h1 class="tab-title5">PROCESSO SELETIVO</h1>
+      <h2 class="tab-title5">23/02 até 09/03</h2>
     </div>
 
-    <div class="vaga-item">
-    <div class="grid-item7">
-      <h1 class="tab-title5">DIRETORIA</h1>
-      <p class="text7">Período de inscrição + realização e entrega de projeto:</p>
-      <p class="text7">23/02 até 05/03</p>
-    </div>
-    <p class="tab-text7">O processo seletivo para diretoria conta com a inscrição do formulário + entrega de um projeto (que será encaminhado no particular para cada inscrito) + um pequeno e simples bate-papo</p>
-    </div>
-    </div>
-    <p class="tab-text71">Todo processo seletivo, desde a inscrição até o feedback dos resultados, acontecerá dentro do período estipulado (23/02 até 09/03)</p>
-  </section>
+    <div class="grid-box7">
 
-  <footer class="main-footer">
+      <div class="vaga-item">
+        <div class="grid-item7">
+          <h3 class="tab-title5">LIGANTE</h3>
+          <p class="text7">23/02 até 27/02</p>
+        </div>
+        <p class="tab-text7">O processo seletivo para ligantes conta com a inscrição do formulário + um pequeno e simples bate-papo</p>
+      </div>
 
-  <div class="footer-container">
+      <div class="vaga-item">
+        <div class="grid-item7">
+          <h3 class="tab-title5">DIRETORIA</h3>
+          <p class="text7">23/02 até 05/03</p>
+        </div>
+        <p class="tab-text7">O processo seletivo para diretoria conta com a inscrição do formulário + entrega de um projeto (que será encaminhado no particular para cada inscrito) + um pequeno e simples bate-papo </p>
+      </div>
+
+    </div>
+
+  </div>
+      <p class="tab-text71">
+      Todo o processo acontecerá dentro do período estipulado.
+      </p>
+</section>
+
+<footer class="main-footer">
+  <div class="container footer-container">
     <h3 class="footer-title">LAEP</h3>
+
     <div class="footer-links">
       <a href="https://www.instagram.com/laep.fasm/" target="_blank" class="footer-link">Instagram</a>
       <a href="https://wa.me/5511976412529" target="_blank" class="footer-link">WhatsApp</a>
-      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=45TVkwuvmUCEh4-FEfe1rlmfn0iPECpPvvRVosJs7cJUREJOS1Y5VkNCQTU3Vkg3TU5QOFdKVExDSS4u" target="_blank" class="footer-link">Formulário</a>
+      <a href="#" class="footer-link">Formulário</a>
     </div>
+
     <p class="footer-copy">
       © 2026 LAEP — Todos os direitos reservados
     </p>
   </div>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
