@@ -399,9 +399,23 @@ html{
   font-size: 18px;
 }
 
-.contato{
-  color: var(--blue-dark);
-  margin-top: 20px;
+.contato-box{
+  grid-column: 1 / -1;
+  text-align: center;
+  background: transparent; 
+  padding-top: 40px;
+}
+
+.contato-texto{
+  font-size: 18px;
+  color: var(--blue-light);
+  margin-bottom: 8px;
+}
+
+.contato-numero{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue-light);
 }
 
 /* ===== BLOCO 7: FUNDO AZUL ESCURO + QUADRADO AZUL MÉDIO NO CENTRO ===== */
