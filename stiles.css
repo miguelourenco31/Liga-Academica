@@ -4,6 +4,9 @@
   --blue-light: #BFD6F0;
   --white: #F5F7FB;
   --blue-medio: #5a80ab;
+  --container: 1100px;
+  --pad-x: clamp(16px, 3vw, 32px);
+  --pad-y: clamp(72px, 10vh, 140px);
 }
 
 *{ margin:0; padding:0; box-sizing:border-box; }
@@ -109,12 +112,6 @@ body{
   padding-bottom: 60px;
 }
 
-:root{
-  --container: 1100px;
-  --pad-x: clamp(16px, 3vw, 32px);
-  --pad-y: clamp(72px, 10vh, 140px);
-}
-
 .container{
   width: min(var(--container), 100% - (var(--pad-x) * 2));
   margin-inline: auto;
@@ -126,6 +123,31 @@ html{
 
 .grid-box, .grid-box4, .content5-box, .grid-item7{
   padding: clamp(28px, 5vw, 80px) clamp(20px, 4vw, 60px);
+}
+
+.section-title{
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;    
+  padding-bottom: 22px;
+}
+
+.section-title::after{
+  content:"";
+  position:absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--blue-dark);
+  opacity: .35;
+}
+
+.section-title--light::after{
+  background: var(--blue-light);
+  opacity: .55;
 }
 
 /* ===== BLOCO BASE ===== */
@@ -144,6 +166,20 @@ html{
   background-size: cover;
   background-position: center;
   background-image: url("imagens/Captura\ de\ tela\ 2026-02-21\ 100445.png");
+  position: relative;
+  isolation: isolate;
+}
+
+.block--cover::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(7,27,58,.65),
+    rgba(7,27,58,.85)
+  );
+  z-index: -1;
 }
 
 .cover-logo{
@@ -163,10 +199,12 @@ html{
 }
 
 .content-header{
-  width: min(920px, 100%);
+  width: 100%;
   text-align: center;
   position: relative;
   z-index: 1;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 .brand{
@@ -179,11 +217,12 @@ html{
 }
 
 .tabs-grid{
-  width: min(1100px, 92%);
-  margin: 80px auto 0;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
+  max-width: 1100px;
+  margin: 60px auto 0;
 }
 
 .tabs-grid .tab:nth-child(3){
@@ -613,3 +652,19 @@ html{
   .tab-text3, .tab-text4, .tab-text5{ font-size: 16px; }
 }
 
+
+.tab,
+.grid-box,
+.grid-box4,
+.content5-box,
+.grid-box61,
+.vaga-item{
+  box-shadow: 0 18px 45px rgba(0,0,0,.08);
+  transition: box-shadow .3s ease;
+}
+
+.tab:hover,
+.grid-box61:hover,
+.vaga-item:hover{
+  box-shadow: 0 22px 60px rgba(0,0,0,.15);
+}
